@@ -1,0 +1,3 @@
+[submodule "packages/pinia"]
+	path = packages/pinia
+	url = https://git.lanalden.com/modulos/pinia.git

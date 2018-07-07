@@ -26,4 +26,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get user's coupons relation.
+     * Used as a parameter, returns Illuminate\Database\Eloquent\Collection.
+     *
+     * @return Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function coupons()
+    {
+        return $this->hasMany(Coupon::class);
+    }
 }
