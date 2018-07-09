@@ -12,6 +12,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        // Example user
         User::create([
             'name' => 'Hotelinking',
             'email' => 'hotelinking@laravel.com',

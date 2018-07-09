@@ -61,7 +61,7 @@ class CouponController extends Controller
     {
         $code = $this->getUniqueCode();
 
-        // If coupon not belongs to user, return error
+        // If cannot get unique code, return error
         if(!$code){
             return response()->json([
                 'message' => 'The server cannot create a unique coupon code. Please try again later.'

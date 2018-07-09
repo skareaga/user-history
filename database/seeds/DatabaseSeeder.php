@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             'coupons'
         ]);
 
+        // Execute custom seeders
         $this->call(UsersTableSeeder::class);
         $this->call(CouponsTableSeeder::class);
     }

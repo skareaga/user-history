@@ -12,6 +12,7 @@ class CouponsTableSeeder extends Seeder
      */
     public function run()
     {
+        // Example coupons
         factory(Coupon::class, 10)->create();
     }
 }
