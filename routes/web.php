@@ -2,7 +2,7 @@
 
 Route::get('/', function () {
     if (Auth::check()) {
-        return redirect('/home');;
+        return redirect('/coupons');;
     }
     
     return view('auth.login');
@@ -10,4 +10,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Coupons
+Route::get('/coupons', 'CouponController@index')->name('coupons');
+Route::post('/coupons', 'CouponController@store')->name('coupons.store');
+Route::put('/coupons/{couponId}', 'CouponController@update')->name('coupons.update');

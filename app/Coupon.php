@@ -12,7 +12,7 @@ class Coupon extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'code'
+        'user_id', 'code', 'redeemed_at'
     ];
 
     /**

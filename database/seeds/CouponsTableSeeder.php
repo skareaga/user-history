@@ -1,6 +1,5 @@
 <?php
 
-//use App\User;
 use App\Coupon;
 use Illuminate\Database\Seeder;
 
